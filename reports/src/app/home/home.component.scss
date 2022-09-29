@@ -1,0 +1,73 @@
+$color_1: #f2f2f2;
+$color_2: black;
+$font-family_1: Arial;
+$background-color_1: #1D4299;
+$background-color_2: #FBFBFB;
+$background-color_3: #f1f1f1;
+$background-color_4: #aaa;
+$background-color_5: white;
+
+* {
+  box-sizing: border-box;
+}
+button{
+  border-radius: 12px;
+  background-color: #FBFBFB;
+  color: black;
+  border: 2px solid #3D3C42; 
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #FEFBF6;
+  h1 {
+    font-size: 50px;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: $background-color_1;
+  a {
+    float: left;
+    display: block;
+    color: $color_1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover {
+      background-color: $background-color_2;
+      color: $color_2;
+    }
+  }
+}
+
+.card {
+  background-color: $background-color_5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav {
+    a {
+      float: none;
+      width: 100%;
+    }
+  }
+}

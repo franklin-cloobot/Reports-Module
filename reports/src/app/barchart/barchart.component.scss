@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* {
+  font-size: 17px;
+  background-color: $midnight-dark;
+  background-image: linear-gradient(to bottom right, $midnight-dark, $midnight-medium);
+  background-attachment: fixed; // The background is fixed relative to the viewport
+  color: $steel-regular; // Change text color to an _almost_ white
+}
