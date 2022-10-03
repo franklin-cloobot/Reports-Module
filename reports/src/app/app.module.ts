@@ -10,20 +10,24 @@ import { BarChartComponent } from './barchart/barchart.component';
 import { ReportComponent } from './report/report.component';
 import { ChartComponent } from './chart/chart.component';
 import { TableComponent } from './table/table.component';
+import { LinechartComponent } from './linechart/linechart.component';
+import { PieComponent } from './pie/pie.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewReportComponent,
     BarChartComponent,
-    NgChartsModule,
     ReportComponent,
     ChartComponent,
     TableComponent,
+    LinechartComponent,
+    PieComponent,
 
   ],
   imports: [
     BrowserModule,
+    NgChartsModule,
     AppRoutingModule
   ],
   providers: [],

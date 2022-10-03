@@ -6,7 +6,9 @@ import { BarChartComponent } from './barchart/barchart.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'newrpt', component: NewReportComponent},
-  {path: 'barchart', component: BarChartComponent}
+  {path: 'barchart', component: BarChartComponent},
+  // {path: 'linechart', component: LinechartComponent},
+  // {path: 'pie', component: PieComponent},
   
 ];
 

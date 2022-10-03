@@ -12,6 +12,12 @@ export class NewReportComponent {
   bchart(){
     this.router.navigate(['/barchart'])
   }
+  // lchart(){
+  //   this.router.navigate(['/linechart'])
+  // }
+  // pchart(){
+  //   this.router.navigate(['/pie'])
+  // }
   ngOnInit(): void {
   }
 

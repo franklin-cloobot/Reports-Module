@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
+import { NgChartsModule } from 'ng2-charts';
 @Component({
   selector: 'app-barchart',
   templateUrl: './barchart.component.html',
