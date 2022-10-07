@@ -1,0 +1,23 @@
+<p>layout works!</p>
+<div class="toolbar">
+	<button (click)="layoutService.addItem()">Add Item</button>
+  <div
+    class="draggable"
+    draggable="true"
+    (dragend)="layoutService.dropItem('chart')"
+  >
+    Chart
+  </div>
+  <div
+    class="draggable"
+    draggable="true"
+    (dragend)="layoutService.dropItem('table')"
+  >
+    Table
+  </div>
+</div>
+<gridster [options]="options">
+  <gridster-item *ngFor="let item of layout" [item]="item" (dragover)="layoutService.setDropId(item.id)">
+  	 <button (click)="layoutService.deleteItem(item)">Delete Item</button>
+  </gridster-item>
+</gridster>
