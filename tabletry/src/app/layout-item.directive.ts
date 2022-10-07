@@ -12,9 +12,7 @@ const components = {
   chart: ChartComponent,
   table: TableComponent
 };
-@Directive({
-  selector: '[appLayoutItem]'
-})
+
 export class LayoutItemDirective implements OnChanges {
   @Input() componentRef: string;
   component: ComponentRef<any>;

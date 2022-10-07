@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser';
 import { GridsterModule } from 'angular-gridster2';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +11,7 @@ import { LayoutItemDirective } from './layout-item.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    
+    LayoutComponent,
     ChartComponent,
     TableComponent,
     LayoutItemDirective
@@ -19,14 +19,14 @@ import { LayoutItemDirective } from './layout-item.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutComponent,
     GridsterModule
   ],
-  entryComponents: [
-  ChartComponent,
-  TableComponent
-],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ChartComponent,
+    TableComponent
+  ]
 })
 export class AppModule { }
+
